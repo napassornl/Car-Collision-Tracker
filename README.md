@@ -1,3 +1,4 @@
+Copyright April-May 2017
 # Car-Collision-Tracker
 This is a class assignment to predicting collisions of a large number of objects moving in a two-dimensional space.
 The problem is relevant, for example, to air-traffic control, self-driving cars, or game simulations (asteroids, curling, pool).
