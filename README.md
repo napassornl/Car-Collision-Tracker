@@ -26,6 +26,10 @@ The vehicles travel on a two-dimensional surface called the “field”. Each ve
 ## Collision Model
 Two vehicles collide at the moment the distance between them becomes equal to the collision distance. For this problem, the collision distance is defined as 10 meters. When two vehicles collide, they are vaporized and are removed from the field. All other vehicles continue. My task was to discover all collisions, in the order that they occur, and determine the surviving vehicles. Time did not exist before t = 0, so if two vehicles would have collided in the past, we ignore this event. It never happened.
 
+## Object-Oriented Design
+I created a Vehicle class that stores all the data read from the input file for each car. I created a Collision Class that stores pair of car objects that collideed along with the time they collide. Once two cars collide, I had to make sure that they were not taken into account for the future because the requirement was when cars collide, they are vaporized and removed from the field. So I had to add in a class field that specified this.     
+I then created functions that calculate the collision time given that the requirements were that two cars are said to collide when the distance between them equals collision distance (10 m).  
+
 # My Output Format
 The first line should specify how many vehicles there are.
 
